@@ -1,0 +1,26 @@
+# Clone a remote repository:
+git clone <repository_url>
+
+# Add all changes to the staging area:
+git add .
+
+# Commit changes with a message:
+git commit -m "commit message"
+
+# Push changes to a remote branch:
+git push <remote_name> <branch_name>
+
+# Pull changes from a remote branch:
+git pull <remote_name> <branch_name>
+
+# Switch to a different branch:
+git checkout <branch_name>
+
+# Create a new branch and switch to it:
+git checkout -b <new_branch_name>
+
+# Merge changes from one branch into another:
+git merge <source_branch_name> <target_branch_name>
+
+# Show the status of the repository:
+git status
