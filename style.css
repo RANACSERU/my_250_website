@@ -1,3 +1,62 @@
-body{
-    background-color: aqua;
+/* Style for header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Style for header h1 */
+.header h1 {
+  margin: 0;
+}
+
+/* Style for section */
+.section {
+  padding: 20px;
+}
+
+/* Style for section-title */
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Style for table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style for table th */
+th {
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style for table td */
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Style for ul */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Style for about me section */
+section:nth-of-type(4) img {
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for contact me section */
+section:nth-of-type(5) p {
+  font-size: 20px;
+  margin-bottom: 20px;
 }
