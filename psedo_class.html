@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            counter-reset: section;
+        }
+        p::before{
+            counter-increment: section;
+            content: "BC" counter(section) " :";
+        }
+
+        div{
+            width: 25%;
+            color: darkkhaki;
+        }
+         h1:hover{
+            color: aqua;
+            font-size: 50px;
+            background-color: blueviolet;
+         }
+
+         .sp-effect:hover{
+            text-transform: capitalize;
+            background-color: crimson;
+         }
+
+         #btn:hover{
+            background-color: chartreuse;
+         }
+    </style>
+
+   
+</head>
+<body>
+   <div>
+        <h1>Psedo Class</h1>
+        <h1>Normal Cl;ass</h1>
+        <h1 class="sp-effect">Vodro Class</h1>
+   </div> 
+
+   <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id=""><br>
+    <label for="emai">Email</label>
+    <input type="email" name="" id=""><br>
+    <button type="submit" id="btn">Submit</button>
+   </div>
+
+   <a href="https//:www.youtube.com">Youtube</a>
+
+   <ul >
+        <p>jodu</p>
+        <p> modu </p>
+        <p>kodu  </p>
+        <p> gonesh </p>
+        <p> baten </p>
+        <p> vera </p>
+   </ul>
+
+
+
+
+</body>
+</html>
