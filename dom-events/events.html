@@ -39,16 +39,13 @@
         secondButton.addEventListener('click',changeBodyColor)
 
         /////////////////////////////////////////////////////////
-        function changeHeaderStyle() {
-        var header = document.getElementById('heading');
-        header.style.color = 'red';
+        function chnageHeaderColor(){
+            var header1 = document.getElementById('header');
+            header1.style.color = 'red';
         }
 
-        
-
-        var thirdButton = document.getElementById('third-btn');
-        // secondButton.onclick = changeBodyColor;
-        thirdButton.addEventListener('click',changeHeaderStyle)
+        var clickHandler = document.getElementById('third-btn');
+        clickHandler.addEventListener('click', chnageHeaderColor);
     </script>
 </body>
 </html>
