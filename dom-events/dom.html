@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring DOM</title>
+    <style>
+        .article{
+            border: 2px solid red;
+            border-radius: 20px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article class="article" id="first-article">
+            <h2>Exploring DOM</h2>
+            <h3>Article-1</h3>
+            <h5 class="author">Author-1</h5>
+            <P class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae suscipit inventore dolor alias ab facilis, assumenda quae odio at ipsum ipsa ad earum ipsam, quia non? Nobis eveniet suscipit impedit.</P>
+        </article>
+        <article class="article">
+            <h3>Article-2</h3>
+            <h5 class="author">Author-2</h5>
+            <P class="description">Excepturi, consectetur error. Quis nostrum sequi, nulla vitae, quidem voluptas deleniti expedita maiores suscipit aliquid eius eum minus eveniet repudiandae in? Veritatis dolores quibusdam unde quo repudiandae voluptates minima porro!</P>
+        </article>
+        <article class="article">
+            <h3>Article-3</h3>
+            <h5 class="author">Author-3</h5>
+            <P class="description">Ex, voluptatum aperiam ab deleniti nobis nesciunt maxime, voluptatem cum numquam, soluta explicabo autem placeat tempore reprehenderit quia ducimus porro harum hic deserunt temporibus. Ut perferendis iste hic rem deleniti.</P>
+        </article>
+    </section>
+
+    <script>
+        var author = document.getElementsByClassName('author');
+
+        var setTitle = document.querySelector('h2');
+        setTitle.setAttribute('title', 'You are the title');
+        setTitle.style.color = 'purple'
+        // console.log(author);
+        var article = document.getElementById('first-article');
+        // console.log(article);
+        var newParagraph = document.createElement('P');
+        
+        // console.log(newParagraph);
+        newParagraph.innerHTML = 'This is added paragraph by JS';
+        // console.log(newParagraph);
+        newParagraph.classList.add('added-paragraph');
+        newParagraph.id = 'added-paragraph';
+        article.appendChild(newParagraph);
+
+        var setColorOnAddedID = document.getElementById('added-paragraph');
+        setColorOnAddedID.style.color = 'red';
+
+
+        for (let i = 0; i < author.length; i++) {
+            var element = author[i];
+            if(i==0){
+                element.style.color = 'red';
+            }
+            else if(i==1){
+                element.style.color = 'green';
+            }
+            else if(i==2){
+                element.style.color = 'blue';
+            }            
+            
+            element.innerHTML = 'Lekhok ' + (i+1);
+            element.style.backgroundColor = 'lightblue'
+            
+        }
+        
+    </script>
+    
+</body>
+</html>

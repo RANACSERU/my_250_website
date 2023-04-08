@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Exploring Events</h1>
+    <!-- <button onclick="handleClick()">Click me</button> -->
+    <!-- <button onclick="showDate()">Todays Date</button> -->
+    <button id="first-btn">Clicked me-1</button>
+    <button id="second-btn">Clicked me to chnge bdy color</button>
+    <button id="third-btn">Clicked me-3</button>
+
+
+
+    <script>
+        // function showDate(){
+        //     console.log(new Date);
+        // }
+
+        function handleClick(){
+            console.log("Someone Clicked me");
+        }
+        
+        var firstButton = document.getElementById('first-btn');
+        firstButton.onclick = handleClick;
+
+//////////////////////////////////////////////////////////////
+
+
+        function changeBodyColor(){
+            document.body.style.backgroundColor = 'cyan';
+        }
+        var secondButton = document.getElementById('second-btn');
+        // secondButton.onclick = changeBodyColor;
+        secondButton.addEventListener('click',changeBodyColor)
+
+        /////////////////////////////////////////////////////////
+        function changeHeaderStyle() {
+        var header = document.getElementById('heading');
+        header.style.color = 'red';
+        }
+
+        
+
+        var thirdButton = document.getElementById('third-btn');
+        // secondButton.onclick = changeBodyColor;
+        thirdButton.addEventListener('click',changeHeaderStyle)
+    </script>
+</body>
+</html>
